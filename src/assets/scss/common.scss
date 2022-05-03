@@ -1,0 +1,458 @@
+@import "./mixin";
+
+@include mobile {
+  #wrap {
+    position: relative;
+    min-height: 100%;
+
+    #mainImg {
+      width: 100%;
+    }
+
+    #common_sub_top_bar {
+      display: flex;
+      font-weight: 700;
+      padding: 10px;
+      border-bottom: 1px solid #e5e7eb;
+      align-items: center;
+
+      img {
+        vertical-align: middle;
+        width: 40%;
+      }
+
+      .common_sub_top_bar_Menu {
+        flex: 1;
+        text-align: center;
+      }
+    }
+
+    #container {
+      position: relative;
+      padding-bottom: 65px;
+      width: 100%;
+
+      #terms {
+        margin-top: 15px;
+        font-weight: 500;
+        padding: 15px;
+
+        #termsAgree {
+          font-weight: 700;
+        }
+
+        #termsChk {
+          padding-top: 10px;
+
+          .termSlide {
+            background-color: $common_gray_color;
+          }
+
+          #termsAllChk {
+            display: flex;
+            padding: 10px;
+            background-color: $common_gray_color;
+
+            .commonTermsSub {
+              flex: 1;
+            }
+
+            .commonTermsSubText {
+              flex: 6;
+            }
+          }
+
+          .commonTerms {
+            padding: 10px;
+            display: flex;
+            border-top: 1px solid #e5e7eb;
+
+            .commonTermsSub {
+              flex: 1;
+            }
+
+            .commonTermsSubText {
+              flex: 6;
+            }
+          }
+        }
+      }
+
+      #userInfoContent {
+        margin-top: 15px;
+        display: block;
+        padding: 15px;
+        font-size: 13px;
+
+        .userInfoDiv {
+          padding-bottom: 15px;
+
+          font {
+            color: $common_blue_color;
+          }
+
+          .userInfoTitleDiv {
+            display: flex;
+            font-weight: 600;
+
+            .userInfoTitle {
+              flex: 1;
+            }
+
+            .userInfoFocus {
+              font-size: 12px;
+              color: $common_blue_color;
+              flex: 2;
+              text-align: right;
+            }
+          }
+        }
+
+        div {
+          width: 100%;
+          background-color: #fff;
+
+          input {
+            box-sizing: border-box;
+            box-shadow: 0px 1px 1px 0px #ddd;
+            padding-top: 15px;
+            padding-bottom: 8px;
+            width: 99%;
+            border: none;
+            outline: none;
+            margin-bottom: 10px;
+          }
+
+          button {
+            border: 1px solid $common_gray_color;
+            padding: 8px;
+            background-color: #fff;
+          }
+        }
+      }
+
+      #companyInfoContent {
+        display: block;
+        padding: 15px;
+        font-size: 13px;
+
+        .companyInfoDiv {
+          padding-bottom: 15px;
+
+          span {
+            font-weight: 600;
+          }
+
+          .companyInputFile {
+            display: flex;
+
+            input[type="file"] {
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              padding: 0;
+              margin: -1px;
+              overflow: hidden;
+              clip: rect(0, 0, 0, 0);
+              border: 0;
+            }
+
+            label {
+              display: inline;
+              margin-left: 5px;
+              width: 75px;
+              height: 34px;
+              font-size: 12px;
+              text-align: center;
+              line-height: 34px;
+              background: #fff;
+              border: 1px solid $common_gray_color;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        div {
+          width: 100%;
+          background-color: #fff;
+
+          input {
+            box-sizing: border-box;
+            box-shadow: 0px 1px 1px 0px #ddd;
+            padding-top: 15px;
+            padding-bottom: 8px;
+            width: 99%;
+            border: none;
+            outline: none;
+            margin-bottom: 10px;
+          }
+
+          button {
+            border: 1px solid $common_gray_color;
+            padding: 8px;
+            background-color: #fff;
+          }
+        }
+      }
+
+      #loginMainImg {
+        padding: 30px;
+        text-align: center;
+      }
+
+      #loginContent {
+        padding: 15px;
+        font-size: 13px;
+
+        .loginDiv {
+          .subLoginMenuDiv {
+            padding-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #autoLoginDiv {
+              font-weight: 550;
+              flex: 1;
+              color: $common_strong_blue_color;
+
+              input {
+                margin-right: 5px;
+                height: 13px;
+              }
+            }
+
+            #idPwSearchDiv {
+              text-align: right;
+              font-weight: 550;
+              flex: 1;
+              color: $common_strong_blue_color;
+            }
+          }
+        }
+
+        .loginInfoInput {
+          box-sizing: border-box;
+          box-shadow: 0px 1px 1px 0px #ddd;
+          padding-top: 15px;
+          padding-bottom: 8px;
+          width: 99%;
+          border: none;
+          outline: none;
+          margin-bottom: 10px;
+        }
+      }
+
+      #loginBtnDiv {
+        padding: 15px;
+        margin-bottom: 15px;
+
+        #loginBtn {
+          width: 100%;
+          font-size: 11px;
+          font-weight: 400;
+          color: #fff;
+          padding: 0 3px 0 3px;
+          height: 42px;
+          font-size: 14px;
+          border: 0;
+          border-radius: 36px;
+          background-color: $common_strong_blue_color;
+        }
+      }
+
+      #signUpBtnDiv {
+        padding: 15px;
+
+        #signUpBtn {
+          width: 100%;
+          font-size: 11px;
+          font-weight: 400;
+          color: #fff;
+          padding: 0 3px 0 3px;
+          height: 42px;
+          font-size: 14px;
+          border: 0;
+          border-radius: 36px;
+          background-color: $common_purple_color;
+          margin-bottom: 12px;
+        }
+
+        #signUpNaver {
+          width: 100%;
+          font-size: 11px;
+          font-weight: 400;
+          color: #fff;
+          padding: 0 3px 0 3px;
+          height: 42px;
+          font-size: 14px;
+          border: 0;
+          border-radius: 36px;
+          background-color: #57b528;
+          margin-bottom: 12px;
+        }
+
+        #signUpKakao {
+          width: 100%;
+          font-size: 11px;
+          font-weight: 400;
+          color: #fff;
+          padding: 0 3px 0 3px;
+          height: 42px;
+          font-size: 14px;
+          border: 0;
+          border-radius: 36px;
+          background-color: #fbb903;
+        }
+      }
+
+      #viewMoreMenuDiv {
+        padding: 15px;
+        display: flex;
+
+        #viewMoreListDiv {
+          flex: 2;
+          img {
+            vertical-align: middle;
+          }
+        }
+
+        #arrowDiv {
+          flex: 1;
+          text-align: right;
+
+          img {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+    .signUpBtn {
+      padding-top: 15px;
+      position: fixed;
+      left: 0;
+      bottom: 0px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 100px;
+      background: #ffffff;
+      z-index: 100;
+
+      div {
+        text-align: center;
+        flex: 1;
+        height: 65px;
+
+        button {
+          width: 85%;
+          font-size: 11px;
+          font-weight: 400;
+          color: #404040;
+          padding: 0 3px 0 3px;
+          height: 36px;
+          font-size: 14px;
+          color: #fff;
+          border: 0;
+          border-radius: 36px;
+        }
+
+        .btn_menu_cancel {
+          background: #0be6c1;
+        }
+
+        .btn_menu_next {
+          background: $common_blue_color;
+        }
+      }
+    }
+
+    .footerLogo {
+      flex: 3;
+      position: fixed;
+      bottom: 0;
+      margin: 0 auto;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      padding-bottom: 10px;
+      z-index: 1200;
+      background: #ffffff;
+    }
+
+    .nav_bar {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 65px;
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      z-index: 100;
+
+      button {
+        width: 25%;
+        height: 65px;
+        font-size: 11px;
+        font-weight: 400;
+        color: #404040;
+        line-height: 95px;
+        background: #fff;
+        border: none;
+      }
+
+      button.on {
+        font-weight: 700;
+        color: #4726b4;
+      }
+
+      .btn_menu_home {
+        background: url(./img/ic_menu_home_off.png) no-repeat 50% 9px;
+        background-size: 20px;
+      }
+      .btn_menu_home.on {
+        background: url(./img/ic_menu_home_on.png) no-repeat 50% 9px;
+        background-size: 20px;
+      }
+      .btn_menu_trend {
+        background: url(./img/ic_menu_chart_off.png) no-repeat 50% 9px;
+        background-size: 20px;
+      }
+      .btn_menu_trend.on {
+        background: url(./img/ic_menu_chart_on.png) no-repeat 50% 9px;
+        background-size: 20px;
+      }
+      .btn_menu_favorite {
+        background: url(./img/ic_mene_favorite_off.png) no-repeat 50% 9px;
+        background-size: 20px;
+      }
+      .btn_menu_favorite.on {
+        background: url(./img/ic_mene_favorite_on.png) no-repeat 50% 9px;
+        background-size: 20px;
+      }
+      .btn_menu_ai {
+        background: url(./img/ic_menu_ai_off.png) no-repeat 50% 9px;
+        background-size: 20px;
+      }
+      .btn_menu_ai.on {
+        background: url(./img/ic_menu_ai_on.png) no-repeat 50% 9px;
+        background-size: 20px;
+      }
+      .btn_menu_more {
+        background: url(./img/ic_menu_more_off.png) no-repeat 50% 9px;
+        background-size: 20px;
+      }
+      .btn_menu_more.on {
+        background: url(./img/ic_menu_more_on.png) no-repeat 50% 9px;
+        background-size: 20px;
+      }
+    }
+  }
+}
+
+@include tablet {
+}
